@@ -4,14 +4,19 @@
 
 @model ST_WebApp.Models.Employee
 
-<h1>Employee Details</h1>
+@if (ViewBag.EmployeeNotFound == true)
+{
+    <h1>Employee Not Found</h1>
+    <p>The employee with the specified ID was not found.</p>
+}
+else
+{
+    <h1>Employee Details</h1>
 
-<div>
-    <p><strong>Id:</strong> 
-        @Model.Id</p>
+    <p><strong>Id:</strong> @Model.Id</p>
     <p><strong>Name:</strong> @Model.Name</p>
     <p><strong>Age:</strong> @Model.Age</p>
     <p><strong>Salary:</strong> @Model.Salary</p>
     <p><strong>Address:</strong> @Model.Address</p>
     <p><strong>Email:</strong> @Model.Email</p>
-</div>
+}

@@ -11,11 +11,13 @@ namespace ST_WebApp.Controllers
 
             if (employee == null)
             {
-                return NotFound();
+                ViewBag.EmployeeNotFound = true;
+                return View();
             }
 
             return View(employee);
         }
+
 
 
         // Action to get all employees
