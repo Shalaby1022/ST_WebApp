@@ -9,5 +9,6 @@ the application we created is an ASP.NET Core MVC web application that manages e
 3-EmployeeController: We implemented an EmployeeController with two actions:
 
 GetById: Retrieves an employee by their ID and displays their details.
+
 GetAll: Retrieves all employees and displays them in a table format.
 Views: We created corresponding views for each action (GetById.cshtml and GetAll.cshtml) to display the employee details and the list of employees, respectively
