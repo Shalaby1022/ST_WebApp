@@ -31,6 +31,17 @@
                 Address = "El-Horya St",
                 Email = "montenegro@gmail.com"
             },
+                        new Employee
+            {
+                Id = 2,
+                Name = "Jane Smith",
+                Age = 35,
+                Salary = 75000,
+                Address = "456 Oak Ave",
+                Email = "jane.smith@example.com"
+            },
+
+
 
 
         };
